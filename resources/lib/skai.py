@@ -491,7 +491,7 @@ class Indexer:
 
                 json_ = json.loads(json_)
 
-                url = ''.join([self.play_link, json_['episode'][0]['media_item_file'], '.m3u8'])
+                url = ''.join([self.play_link, 'skaivod/_definst_/mp4:skai/', json_['episode'][0]['media_item_file'], '/chunklist.m3u8'])
 
                 plot = client.stripTags(json_['episode'][0]['descr'])
 
